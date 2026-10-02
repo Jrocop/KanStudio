@@ -1553,68 +1553,68 @@ button, input, textarea, select { font-family: inherit; }
   form.querySelectorAll('input, select, textarea').forEach(field => {
     field.addEventListener('blur', () => validateField(field));
     field.addEventListener('input', () => {
-      if (field.classList.contains('error')) validateField(field);
-    });
-    if (field.type === 'checkbox') field.addEventListener('change', () => validateField(field));
+      si (campo.lista de clases.contiene('error')) validar campo(campo);
+body});
+ifsi (campo.tipo === 'casilla de verificación') campo.addEventListener('cambio', () => validar campo(campo));
   });
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    let isValid = true;
-    form.querySelectorAll('input, select, textarea').forEach(field => {
-      if (!validateField(field)) isValid = false;
+  forma.addEventListener('enviar', e => {
+fielde.PrevenirPredeterminado();
+</dejar es válido = verdaderadero;
+discapacitadoforma.Selector de consultasTodos('entrada, selección, área de texto').para cada uno(campo => {
+      si (!validar campo(campo)) es válido = falso;
     });
-    if (!isValid) {
-      const firstError = form.querySelector('.error');
-      if (firstError) firstError.focus();
-      return;
+dejar si (!es válido) {
+válidoconst imprimación error = forma.Selector de consultas('.error');
+verdaderosi (imprimación error) imprimación error.enfoque();
+      retorno;
     }
-    const enviarBtn = forma.Selector de consultas('botón[tipo="enviar"]');const enviarBtn = forma.Selector de consultas('botón[tipo="enviar"]');
-    const texto original = enviarBtn.contenido de texto;const texto original = enviarBtn.contenido de texto;
-    enviarBtn.contenido de texto = 'Enviando...';enviarBtn.contenido de texto = 'Enviando...';
-    enviarBtn.incapacitado = vergaddero;enviarBtn.incapacitado = verdedero;
-    setTimeout(() => {setTimeout(() => {
-      prueba {prueba {
-        const datos = {const datos = {
-          nombre: formulario.nombre.valor.trim(),nombre: formulario.nombre.valor.trim(),
-          correo eléctrico: forma.correo eléctrico.valor.trim(),correo eléctrico: forma.correo eléctrico.valor.trim(),
-          ciudad: forma.ciudad.valor.trim(),ciudad: forma.ciudad.valor.trim(),
-          nivel: formulario.nivel.valor,nivel: formulario.nivel.valor,
-          mensaje: formulario.mensaje.valor.trim(),mensaje: formulario.mensaje.valor.trim(),
-          fechha: nueva fechha().ToISOString()fechha: nueva fechha().ToISOString()
-        };};
-        const registros = JSON.parse(almacenamiento local.obtener elemento('kan_registros') || '[]');const registros = JSON.parse(almacenamiento local.obtener elemento('kan_registros') || '[]');
-        registros.push(datos);registros.push(datos);
-        almacenamiento local.setItem('kan_registros', JSON.stringify(registros));almacenamiento local.setItem('kan_registros', JSON.stringify(registros));
-      } atrapar (err) { /*silencioso*/ }} atrapar (err) { /*silencioso*/ }
-      forma.estilo.visualizar = 'ninguno';forma.estilo.visualizar = 'ninguno';
-      formularioÉxito.lista de clases.agregar('mostrar');formularioÉxito.lista de clases.agregar('mostrar');
-      formularioÉxito.desplazarse hacia la vista({ comportamiento: 'suave', bloque: 'centro' });formularioÉxito.desplazarse hacia la vista({ comportamiento: 'suave', bloque: 'centro' });
-      enviarBtn.contenido de texto = texto original;enviarBtn.contenido de texto = texto original;
-      enviarBtn.incapacitado = falso;enviarBtn.incapacitado = falso;
-    }, 900);}, 900);
-  });});
+    const enviarBtn = forma.Selector de consultas('botón[tipo="enviar"]');
+    const texto original = enviarBtn.contenido de texto;
+    enviarBtn.contenido de texto = 'Enviando...';
+    enviarBtn.incapacitado = verdaderadero;
+    setTimeout(() => {
+      intentar {
+        const datos = {
+          nombre: forma.nombre.valor.trim(),
+          correo eléctrico: forma.correo eléctrico.valor.trim(),
+          ciudad: forma.ciudad.valor.trim(),
+          nivel: forma.nivel.valor,
+          mensaje: forma.mensaje.valor.trim(),
+          fechha: nuevo Fecha().ToISOString()
+        };
+        const registros = JSON.parse(almacenamiento local.obtener elemento('kan_registros') || '[]');
+        registros.push(datos);
+        almacenamiento local.setItem('kan_registros', JSON.stringify(registros));
+      } atrapar (err) { /*silencioso*/ }
+      forma.estilo.visualizar = 'ninguno';
+      formularioÉxito.lista de clases.agregar('mostrar');
+      formularioÉxito.desplazarse hacia la vista({ comportamiento: 'suave', bloque: 'centro' });
+      enviarBtn.contenido de texto = texto original;
+      enviarBtn.incapacitado = falso;
+    }, 900);
+  });
 
-  /* ---------- 7. Año dinámico ---------- *//* ---------- 7. Año dinámico ---------- */
-  documento.getElementById('año').contenido de texto = nuevo Fecha().obtener año completo();documento.getElementById('año').contenido de texto = nuevo Fecha().obtener año completo();
+  /* ---------- 7. Año dinámico ---------- */
+  documento.getElementById('año').contenido de texto = nuevo Fecha().obtener año completo();
 
-  /* ---------- 8. Desplazamiento suave ---------- *//* ---------- 8. Desplazamiento suave ---------- */
-  documento.Selector de consultasTodos('a[href^="#"]').para cada uno(ancla => {documento.Selector de consultasTodos('a[href^="#"]').para cada uno(ancla => {
-    ancla.addEventListener('clic', función(e) {ancla.addEventListener('clic', función(e) {
-      const ID de destino = esto.obtener atributo('href');const ID de destino = esto.obtener atributo('href');
-      si (ID de destino === '#' || ID de destino.longitud < 2) retorno;si (ID de destino === '#' || ID de destino.longitud < 2) retorno;
-      const objetivo = documento.Selector de consultas(ID de destino);const objetivo = documento.Selector de consultas(ID de destino);
-      si (objetivo) {si (objetivo) {
-        e.PrevenirPredeterminado();e.PrevenirPredeterminado();
-        despliegue constante = 70;despliegue constante = 70;
-        const top = objetivo.getBoundingClientRect().top + ventana.scrollY - despliegue;const top = objetivo.getBoundingClientRect().top + ventana.scrollY - despliegue;
-        ventana.desplazarse hasta({arriba, comportamiento: 'suave' });ventana.desplazarse hasta({arriba, comportamiento: 'suave' });
+  /* ---------- 8. Desplazamiento suave ---------- */
+  documento.Selector de consultasTodos('a[href^="#"]').para cada uno(ancla => {
+    ancla.addEventListener('clic', función(e) {
+      const targetId = esto.obtener atributo('href');
+      si (targetId === '#' || targetId.longitud < 2) retorno;
+      const objetivo = documento.Selector de consultas(targetId);
+      si (objetivo) {
+        e.PrevenirPredeterminado();
+        const offset = 70;
+        const top = objetivo.getBoundingClientRect().top + ventana.scrollY - offset;
+        ventana.desplazarse hasta({ top, comportamiento: 'suave' });
       }
-    });});
-  });});
+    });
+  });
 
-})();)();
-</script>script>
+})();
+</script>
 
-</cuervo>cuervo>
-</html>html>
+</cuerpo>
+</html>
