@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAN STUDIO — Saca tu Modo Bestia</title>
+<meta name="description" content="KAN STUDIO: motivación, disciplina y calistenia inspirada en Kukulkán. Los límites están para romperse.">
+<meta name="theme-color" content="#091819">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="multimedia/variante-1.png">
+
+<!-- Google Fonts: Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- Hoja de estilos -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- =========================================================
+     BIBLIOTECA SVG — Decoraciones mayas reutilizables
+     ========================================================= -->
+<svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="maya-greca-divider" viewBox="0 0 240 40" preserveAspectRatio="xMidYMid meet">
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M 0 30 V20 H10 V10 H20 V20 H30 V30 H40 V20 H50 V10 H60 V20 H70 V30 H80 V20 H90 V10 H100 V20 H110 V30 H120 V20 H130 V10 H140 V20 H150 V30 H160 V20 H170 V10 H180 V20 H190 V30 H200 V20 H210 V10 H220 V20 H230 V30 H240"/>
+      </g>
+      <g transform="translate(120, 20)">
+        <circle r="5" fill="currentColor" opacity="0.3"/>
+        <path d="M -3 -3 L 3 3 M 3 -3 L -3 3" stroke="currentColor" stroke-width="1.2"/>
+      </g>
+    </symbol>
+
+    <symbol id="maya-corner" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7">
+        <path d="M 0 10 H 10 V 0"/>
+        <path d="M 0 20 H 20 V 0"/>
+        <path d="M 0 30 H 30 V 0"/>
+        <path d="M 0 40 H 40 V 0"/>
+        <path d="M 10 10 L 10 20 L 20 20 L 20 10 Z"/>
+        <path d="M 22 22 L 22 32 L 32 32 L 32 22 Z"/>
+        <circle cx="40" cy="40" r="3"/>
+        <path d="M 46 40 L 52 40 M 40 46 L 40 52"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="header" id="header">
+  <nav class="nav">
+    <a href="#inicio" class="nav-brand" aria-label="KAN STUDIO - Inicio">
+      <img src="multimedia/variante-1.png" alt="KAN STUDIO" class="brand-logo">
+      <span>KAN STUDIO<small>SACA TU MODO BESTIA</small></span>
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#filosofia">Filosofía</a></li>
+      <li><a href="#contenido">Contenido</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#futuro">El Futuro</a></li>
+      <li><a href="#unete" class="nav-cta">Únete a la Tribu</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero bg-noise" id="inicio">
+
+  <!-- Greca decorativa superior -->
+  <svg class="hero-greca" viewBox="0 0 1200 30" preserveAspectRatio="none" aria-hidden="true">
+    <pattern id="heroGreca" x="0" y="0" width="120" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 0 25 V15 H15 V5 H30 V15 H45 V25 H60 V15 H75 V5 H90 V15 H105 V25 H120" 
+            fill="none" stroke="currentColor" stroke-width="1.2"/>
+    </pattern>
+    <rect width="1200" height="30" fill="url(#heroGreca)"/>
+  </svg>
+
+  <!-- Pirámides escalonadas al fondo -->
+  <svg class="hero-pyramids" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+    <defs>
+      <linearGradient id="pyrGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#21565C" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#091819" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="pyrGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#163a3e" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#091819" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="M 600 40 L 700 120 L 660 120 L 740 180 L 460 180 L 540 120 L 500 120 Z" fill="url(#pyrGrad)"/>
+    <g stroke="#091819" stroke-width="1.5" opacity="0.4" fill="none">
+      <path d="M 560 160 H 640 M 540 140 H 660 M 520 120 H 680 M 500 100 H 700"/>
+    </g>
+    <path d="M 200 100 L 280 160 L 250 160 L 320 200 L 80 200 L 150 160 L 120 160 Z" fill="url(#pyrGrad2)"/>
+    <path d="M 1000 100 L 1080 160 L 1050 160 L 1120 200 L 880 200 L 950 160 L 920 160 Z" fill="url(#pyrGrad2)"/>
+    <path d="M 400 130 L 450 180 L 420 180 L 470 210 L 330 210 L 380 180 L 350 180 Z" fill="url(#pyrGrad2)" opacity="0.6"/>
+    <path d="M 800 130 L 850 180 L 820 180 L 870 210 L 730 210 L 780 180 L 750 180 Z" fill="url(#pyrGrad2)" opacity="0.6"/>
+  </svg>
+
+  <div class="hero-content">
+    <img src="multimedia/variante-1.png" alt="KAN STUDIO" class="hero-logo">
+
+    <h1>Saca tu <span class="accent">Modo Bestia</span></h1>
+    <p class="hero-slogan">Los límites están para <strong>romperse</strong></p>
+
+    <div class="hero-cta-group">
+      <a href="#unete" class="btn">Únete a la Tribu</a>
+      <a href="#filosofia" class="btn btn-outline">Conoce la Filosofía</a>
+    </div>
+  </div>
+
+  <a href="#filosofia" class="scroll-indicator" aria-label="Desliza hacia abajo">↓</a>
+</section>
+
+<!-- Divisor maya -->
+<div class="maya-divider" aria-hidden="true">
+  <svg><use href="#maya-greca-divider"/></svg>
+</div>
+
+<!-- =========================================================
+     FILOSOFÍA
+     ========================================================= -->
+<section class="section filosofia" id="filosofia">
+
+  <svg class="corner-decoration corner-tl" aria-hidden="true"><use href="#maya-corner"/></svg>
+  <svg class="corner-decoration corner-tr" aria-hidden="true"><use href="#maya-corner"/></svg>
+  <svg class="corner-decoration corner-bl" aria-hidden="true"><use href="#maya-corner"/></svg>
+  <svg class="corner-decoration corner-br" aria-hidden="true"><use href="#maya-corner"/></svg>
+
+  <div class="container">
+    <div class="filosofia-grid">
+      <div class="filosofia-visual reveal">
+        <img src="multimedia/variante-1.png" alt="KAN STUDIO Kukulkán" class="kan-logo-large">
+      </div>
+
+      <div class="filosofia-text reveal">
+        <p class="section-eyebrow">Nuestra Esencia</p>
+        <h2 class="section-title">Fuerza que viene<br>de nuestras raíces</h2>
+        <p>
+          <strong style="color: var(--teal-light);">KAN STUDIO</strong> combina la sabiduría ancestral maya con el entrenamiento
+          moderno para transformar tu cuerpo, mente y espíritu. Inspirados en <strong>Kukulkán</strong>,
+          la serpiente emplumada símbolo de poder y transformación, entrenamos con disciplina,
+          constancia y propósito.
+        </p>
+        <p>
+          No somos solo una cuenta de fitness. Somos un <strong>estudio de motivación diaria</strong>
+          que utiliza la mística y la fuerza de nuestra herencia para impulsarte a romper tus
+          límites mentales y físicos.
+        </p>
+        <p class="filosofia-tagline">Disciplina · Fuerza · Transformación</p>
+      </div>
+    </div>
+
+    <div class="valores reveal">
+      <div class="valor-card">
+        <svg class="valor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 4v16M18 4v16M3 8h3M18 8h3M3 16h3M18 16h3M6 12h12"/>
+        </svg>
+        <h3>Fuerza</h3>
+        <p>Inspirados en Kukulkán, símbolo de poder y transformación.</p>
+      </div>
+      <div class="valor-card">
+        <svg class="valor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+        </svg>
+        <h3>Disciplina</h3>
+        <p>Enfoque en el entrenamiento constante y la superación personal.</p>
+      </div>
+      <div class="valor-card">
+        <svg class="valor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <h3>Conexión Cultural</h3>
+        <p>Vínculo con la herencia maya, reflejado en el diseño y la filosofía.</p>
+      </div>
+      <div class="valor-card">
+        <svg class="valor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <h3>Inclusividad</h3>
+        <p>Un espacio para todos, sin distinción de género, edad o nivel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divisor maya -->
+<div class="maya-divider" aria-hidden="true">
+  <svg><use href="#maya-greca-divider"/></svg>
+</div>
+
+<!-- =========================================================
+     CONTENIDO (3 pilares)
+     ========================================================= -->
+<section class="section contenido" id="contenido">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-eyebrow">El Hub de Entrenamiento</p>
+      <h2 class="section-title">Entrena tu mejor versión</h2>
+      <p class="section-lead">
+        80% impulso mental, 20% rutinas prácticas. Contenido gratuito para que rompas tus
+        límites desde cualquier lugar.
+      </p>
+    </div>
+
+    <div class="categorias-grid reveal">
+      <article class="categoria-card">
+        <svg class="categoria-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2zM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2z"/>
+        </svg>
+        <h3>Mente Bestia</h3>
+        <p>Frases motivacionales, reflexiones sobre disciplina y cómo romper límites mentales. El empujón psicológico diario que necesitas.</p>
+        <span class="categoria-tag">80% del contenido</span>
+      </article>
+
+      <article class="categoria-card">
+        <svg class="categoria-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.5 6.5h11M6.5 17.5h11M3 9v6M21 9v6M6 4v4M18 4v4M6 16v4M18 16v4"/>
+        </svg>
+        <h3>Cuerpo Bestia</h3>
+        <p>Rutinas de calistenia y peso corporal para hacer en casa o en el parque. Sin equipo, sin excusas, sin costo.</p>
+        <span class="categoria-tag">20% del contenido</span>
+      </article>
+
+      <article class="categoria-card">
+        <svg class="categoria-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 20h20M4 20V8l8-6 8 6v12M9 20v-6h6v6"/>
+        </svg>
+        <h3>Cultura Kan</h3>
+        <p>Datos inspiradores sobre la herencia maya aplicados al esfuerzo diario. Conoce la historia detrás de Kukulkán.</p>
+        <span class="categoria-tag">Identidad</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Divisor maya -->
+<div class="maya-divider" aria-hidden="true">
+  <svg><use href="#maya-greca-divider"/></svg>
+</div>
+
+<!-- =========================================================
+     VIDEOS — 4 videos verticales tipo TikTok
+     ========================================================= -->
+<section class="section videos" id="videos">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-eyebrow">Videos Destacados</p>
+      <h2 class="section-title">Entrena con la tribu</h2>
+      <p class="section-lead">
+        Contenido real, sin filtros. Rutinas verticales que puedes seguir desde tu celular
+        en cualquier lugar. Dales play y saca tu modo bestia.
+      </p>
+    </div>
+
+    <div class="videos-grid reveal">
+      <!-- Video 1 -->
+      <article class="video-card" data-nivel="principiante">
+        <div class="video-wrapper">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="multimedia/video-1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <span class="video-level">Principiante</span>
+        </div>
+        <div class="video-info">
+          <h4>Rutina Express de Activación</h4>
+          <p>15 min · Casa · Sin equipo</p>
+        </div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="video-card" data-nivel="intermedio">
+        <div class="video-wrapper">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="multimedia/video-2.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <span class="video-level">Intermedio</span>
+        </div>
+        <div class="video-info">
+          <h4>Full Body Calistenia</h4>
+          <p>25 min · Parque · Peso corporal</p>
+        </div>
+      </article>
+
+      <!-- Video 3 -->
+      <article class="video-card" data-nivel="intermedio">
+        <div class="video-wrapper">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="multimedia/video-3.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <span class="video-level">Intermedio</span>
+        </div>
+        <div class="video-info">
+          <h4>Core Bestia</h4>
+          <p>20 min · Casa · Abdomen y estabilidad</p>
+        </div>
+      </article>
+
+      <!-- Video 4 -->
+      <article class="video-card" data-nivel="avanzado">
+        <div class="video-wrapper">
+          <video controls muted loop playsinline preload="metadata">
+            <source src="multimedia/video-4.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <span class="video-level">Avanzado</span>
+        </div>
+        <div class="video-info">
+          <h4>Modo Bestia Extremo</h4>
+          <p>35 min · Alta intensidad</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="disclaimer-box" role="note" aria-label="Descargo de responsabilidad médico">
+      <strong style="color: var(--gray);">⚠ Descargo de responsabilidad médica:</strong>
+      Las rutinas de KAN STUDIO son de carácter informativo y educativo. Antes de comenzar cualquier
+      programa de ejercicio, realiza un calentamiento previo, escucha a tu cuerpo y, si eres principiante
+      o tienes alguna condición médica, consulta con un profesional de la salud. KAN STUDIO no se hace
+      responsable por lesiones derivadas de la mala ejecución de los ejercicios.
+    </div>
+  </div>
+</section>
+
+<!-- Divisor maya -->
+<div class="maya-divider" aria-hidden="true">
+  <svg><use href="#maya-greca-divider"/></svg>
+</div>
+
+<!-- =========================================================
+     COMUNIDAD
+     ========================================================= -->
+<section class="section comunidad" id="comunidad">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-eyebrow">La Tribu KAN</p>
+      <h2 class="section-title">No entrenas solo</h2>
+      <p class="section-lead">
+        Únete a una comunidad que te empuja a sacar tu modo bestia todos los días.
+        Comparte tu progreso con <strong class="text-orange">#ModoBestiaKAN</strong>.
+      </p>
+    </div>
+
+    <div class="reto-card reveal">
+      <span class="reto-badge">Reto Activo</span>
+      <h3>Reto 21 Días Modo Bestia</h3>
+      <p>
+        Disciplina diaria, progreso visible. Regístrate, entrena y comparte tu story
+        con el hashtag oficial para participar por una camiseta premium de KAN STUDIO.
+      </p>
+
+      <div class="countdown" id="countdown" aria-label="Cuenta regresiva del reto">
+        <div class="countdown-item"><span class="countdown-num" id="cd-dias">--</span><span class="countdown-label">Días</span></div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-horas">--</span><span class="countdown-label">Horas</span></div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-min">--</span><span class="countdown-label">Min</span></div>
+        <div class="countdown-item"><span class="countdown-num" id="cd-seg">--</span><span class="countdown-label">Seg</span></div>
+      </div>
+
+      <a href="#unete" class="btn">Quiero Unirme al Reto</a>
+    </div>
+
+    <div class="testimonios-grid reveal">
+      <article class="testimonio">
+        <span class="quote-mark">"</span>
+        <p>KAN STUDIO me cambió la mentalidad. No es solo entrenar, es aprender a no rendirme cuando el cuerpo dice basta.</p>
+        <div class="testimonio-author">— Álvaro M., Estudiante CUNOC</div>
+      </article>
+      <article class="testimonio">
+        <span class="quote-mark">"</span>
+        <p>Las rutinas cortas me salvaron entre clases y trabajo. 15 minutos en mi cuarto y ya estoy en modo bestia.</p>
+        <div class="testimonio-author">— Sofía R., Universitaria</div>
+      </article>
+      <article class="testimonio">
+        <span class="quote-mark">"</span>
+        <p>Sentir que pertenezco a una tribu que comparte disciplina y orgullo por nuestras raíces mayas es otro nivel.</p>
+        <div class="testimonio-author">— Diego T., Calisténico</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Divisor maya -->
+<div class="maya-divider" aria-hidden="true">
+  <svg><use href="#maya-greca-divider"/></svg>
+</div>
+
+<!-- =========================================================
+     FUTURO / FORMULARIO
+     ========================================================= -->
+<section class="section futuro" id="futuro">
+  <div class="container">
+    <div class="futuro-grid">
+      <div class="futuro-text reveal">
+        <p class="section-eyebrow">El Futuro</p>
+        <h2 class="section-title">Nuestro gimnasio<br>está en camino</h2>
+        <p>
+          KAN STUDIO nació digital, pero nuestro destino es un espacio físico. Estamos
+          construyendo algo grande y queremos que seas de los primeros en entrenar con nosotros.
+        </p>
+        <ul class="futuro-list">
+          <li>Acceso prioritario al lanzamiento del gimnasio físico.</li>
+          <li>Descuento exclusivo del 15% en tu primera membresía.</li>
+          <li>Invitaciones a retos y eventos presenciales de la tribu.</li>
+          <li>Sorteo de indumentaria premium con diseño de Kukulkán.</li>
+        </ul>
+      </div>
+
+      <div class="reveal" id="unete">
+        <div class="form-card">
+          <h3>Únete a la Tribu</h3>
+          <p>Déjanos tus datos y sé parte del movimiento. Cero spam, solo disciplina.</p>
+
+          <form id="kanForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" autocomplete="name">
+                <span class="error-msg" data-for="nombre"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo *</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required autocomplete="email">
+                <span class="error-msg" data-for="email"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Quetzaltenango" autocomplete="address-level2">
+                <span class="error-msg" data-for="ciudad"></span>
+              </div>
+              <div class="form-group">
+                <label for="nivel">Nivel de entrenamiento</label>
+                <select id="nivel" name="nivel">
+                  <option value="">Selecciona...</option>
+                  <option value="principiante">Principiante — apenas empiezo</option>
+                  <option value="intermedio">Intermedio — entreno regular</option>
+                  <option value="avanzado">Avanzado — modo bestia activado</option>
+                </select>
+                <span class="error-msg" data-for="nivel"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">¿Qué te motiva a unirte? (opcional)</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos tu meta..." maxlength="300"></textarea>
+            </div>
+
+            <label class="form-check">
+              <input type="checkbox" id="privacidad" name="privacidad" required>
+              <span>Acepto la <a href="#" onclick="return false;">política de privacidad</a> y autorizo a KAN STUDIO a contactarme. Mis datos no serán compartidos con terceros.</span>
+            </label>
+            <span class="error-msg" data-for="privacidad" style="display:block; margin-bottom: 1rem;"></span>
+
+            <button type="submit" class="btn btn-full">Enviar y Unirme</button>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <h4>¡Bienvenido a la Tribu!</h4>
+            <p>Tu correo fue registrado correctamente. Prepárate, porque los límites están para romperse.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="multimedia/variante-1.png" alt="KAN STUDIO" class="brand-logo">
+          <div>
+            <strong>KAN STUDIO</strong>
+            <small>SACA TU MODO BESTIA</small>
+          </div>
+        </div>
+        <p>Los límites están para romperse. Motivación, disciplina y calistenia inspirada en la fuerza de Kukulkán.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#filosofia">Filosofía</a></li>
+          <li><a href="#contenido">Contenido</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#comunidad">Comunidad</a></li>
+          <li><a href="#futuro">El Futuro</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="https://instagram.com/kanstudio" target="_blank" rel="noopener" aria-label="Instagram KAN STUDIO">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@kanstudio" target="_blank" rel="noopener" aria-label="TikTok KAN STUDIO">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.83a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.84-.26z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/kanstudio" target="_blank" rel="noopener" aria-label="Facebook KAN STUDIO">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="legal-links">
+        <a href="#" onclick="return false;">Aviso de Privacidad</a>
+        <a href="#" onclick="return false;">Términos de Uso</a>
+        <a href="#" onclick="return false;">Descargo Médico</a>
+        <a href="#" onclick="return false;">Uso Ético de IA</a>
+      </div>
+      <p>© <span id="year"></span> KAN STUDIO. Todos los derechos reservados. Quetzaltenango, Guatemala.</p>
+      <div class="disclaimer-box" style="margin-top: 0.5rem;">
+        <strong style="color: var(--gray);">Aviso de uso:</strong> KAN STUDIO es un proyecto de contenido digital
+        informativo y motivacional. Las rutinas y consejos aquí mostrados no sustituyen la asesoría médica o
+        profesional de entrenamiento personalizado. El equipo utiliza herramientas de inteligencia artificial
+        únicamente como apoyo para ideación y diseño, manteniendo siempre el criterio humano, análisis y
+        redacción original en todo el contenido publicado.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- Script -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
